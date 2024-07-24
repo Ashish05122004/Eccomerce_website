@@ -8,6 +8,7 @@ const AllProducts = () => {
   const [allCategory, setAllCategory] = useState([]);
   const [allProducts, setAllProducts] = useState([]);
   const [originalProducts, setOriginalProducts] = useState([]);
+  const [showProduct,setShowProduct] = useState([]);
   //All Products
   useEffect(() => {
     const fetchAllProducts = async () => {

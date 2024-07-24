@@ -12,6 +12,7 @@ import SignUp from './pages/SignUp'
 import { onAuthStateChanged } from 'firebase/auth'
 import { auth } from './FireBaseAuth/fireBaseAuth'
 import SingleProductPage from './pages/SingleProductPage'
+import PageNotFound from './pages/PageNotFound'
 
 const App = () => {
   const [userName,setUserName] =useState("");
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="/about" element={<About />}/>
           <Route path="/allproducts" element={<AllProducts />}/>
           <Route path="/singleProduct/:id" element={<SingleProductPage />}/>
+          <Route path="*" element={<PageNotFound />}/>
         </Routes>
 
         <div>
